@@ -7,3 +7,7 @@ To run global microsoft sql server:
 ```
 docker run -e "ACCEPT_EULA=Y" -e 'MSSQL_SA_PASSWORD="yourStrong(!)Password"' -p {hostport}:1433 -d mcr.microsoft.com/mssql/server:2022-latest
 ```
+Run mongodb globally:
+````
+docker run --name mongodb -p 27017:27017 -it -d mongo:latest
+````
